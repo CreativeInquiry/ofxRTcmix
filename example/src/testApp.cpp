@@ -28,7 +28,7 @@ void testApp::setup(){
     // make sure to set your audio output in your audio/midi setup to 44100 24-bit.  
     // anything else will cause the thing to reset to 96k 16bit 
     // and all will go haywire and play an octave higher (or whatever)
-    //ofSoundStreamSetup(nchans, 0, sr, framesize, nbufs);
+    ofSoundStreamSetup(nchans, 0, sr, framesize, nbufs);
     
     // launch initial setup score
     RTcmixParseScoreFile("cmixinit.sco");
