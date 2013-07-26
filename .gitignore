@@ -6,7 +6,6 @@
 xcuserdata
 build
 *.app
-*.a
 
 # OSX
 .DS_Store
