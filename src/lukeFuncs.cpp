@@ -9,6 +9,12 @@
 #include <iostream>
 #include "lukeFuncs.h"
 
+// MS deprecates this function ... it's "not safe"
+// see http://msdn.microsoft.com/en-us/library/2ts7cx93(v=vs.80).aspx
+#ifdef TARGET_WIN32
+	#define snprintf _snprintf
+#endif
+
 // LUKE FUNCTIONS
 
 // load an RTcmix text score (.sco) and parse
