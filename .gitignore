@@ -19,3 +19,9 @@ example/obj
 # Win
 *.exe
 *.dll
+
+# example
+example/bin/example_debug
+example/bin/libs
+
+
